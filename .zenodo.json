@@ -1,0 +1,39 @@
+{
+  "title": "Intentide: A Pre-Settlement Collective Intent Stability Network for Autonomous Procurement of Scarce Capacity",
+  "description": "Scarce capacity systems such as ports, spectrum, hospital beds, and compute still allocate by first-come-first-served or crude auctions that reward booking bursts and ignore stability under oversubscription. We propose INTENTIDE: a collective intent stability protocol with Synchronization Stress Index, revise-or-confirm rounds, and stability-weighted fair reservation with deterministic settlement digests. This Public Research Edition (v1.3.0) packages an importable research library (from intentide import INTENTIDEEngine), Reality Gate and benchmark PASS evidence, mutation testing, alternative implementation replication, an eighty-carrier fifteen-slot cold-storage port scenario with dropout, demand-spike, and partial-capacity edge cases, stress tests to 5,000 agents at ten-to-one oversubscription with sampled coalition checks, standards mapping to DMA fairness themes, IMO FAL, and ISO 22301, deployment manifests, competitive positioning against FCFS, auctions, and schedulers, and an honest gap register. INTENTIDE is not a live terminal operating system and does not claim mechanism-design completeness against strategic gaming. This independent technical blueprint does not claim peer review, independent human replication, patentability, or legal compliance opinion. It is released for evaluation, citation, and attempted falsification. Evidence artifacts in this package include Reality Gate results, benchmarks, mutation scores, real-world scenario JSON, stress-scale timings, deployment manifests, and an importable stdlib-only research library with quickstart and integration tests. Readers should treat all claims as blueprint-grade until independently replicated.",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "creators": [
+    {
+      "name": "Haxhijaha, Agim",
+      "orcid": "0009-0002-3234-7765",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "publication_date": "2026-07-16",
+  "version": "1.3.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-by-nc-nd-4.0",
+  "keywords": [
+    "collective-intent",
+    "pre-settlement-risk",
+    "agentic-commerce",
+    "stability-reservation",
+    "scarce-capacity",
+    "synchronization-stress",
+    "autonomous-procurement",
+    "fair-release",
+    "ai-market-stability",
+    "bypass-neutrality"
+  ],
+  "notes": "Independent Research Publication No. 7. v1.3.0 Public Research Edition. Not peer reviewed. Not independently replicated. Not production. Generative AI tools assisted preparation. The named author is responsible for the released content and publication decision.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AGIM8003/intentide-collective-intent",
+      "relation": "isSupplementedBy",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
