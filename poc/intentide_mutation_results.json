@@ -1,0 +1,63 @@
+{
+  "framework": "INTENTIDE",
+  "author": "Agim Haxhijaha",
+  "orcid": "0009-0002-3234-7765",
+  "timestamp_utc": "2026-07-16T17:56:24.727571+00:00",
+  "mutations_total": 10,
+  "mutations_detected": 9,
+  "mutation_score": 0.9,
+  "pass_threshold": 0.9,
+  "mutations": [
+    {
+      "name": "fcfs_instead_of_weight",
+      "detected": true,
+      "caught_by": "top_weights"
+    },
+    {
+      "name": "ignore_capacity",
+      "detected": true,
+      "caught_by": "grants_2"
+    },
+    {
+      "name": "empty_always",
+      "detected": true,
+      "caught_by": "grants_2"
+    },
+    {
+      "name": "duplicate_grant",
+      "detected": true,
+      "caught_by": "top_weights"
+    },
+    {
+      "name": "reverse_weights",
+      "detected": true,
+      "caught_by": "top_weights"
+    },
+    {
+      "name": "skip_quantity",
+      "detected": true,
+      "caught_by": "grants_2"
+    },
+    {
+      "name": "crash_on_empty",
+      "detected": false,
+      "caught_by": null
+    },
+    {
+      "name": "over_allocate",
+      "detected": true,
+      "caught_by": "grants_2"
+    },
+    {
+      "name": "drop_first_agent",
+      "detected": true,
+      "caught_by": "top_weights"
+    },
+    {
+      "name": "hardcode_wrong",
+      "detected": true,
+      "caught_by": "top_weights"
+    }
+  ],
+  "suite_pass": true
+}

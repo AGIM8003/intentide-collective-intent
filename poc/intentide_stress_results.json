@@ -1,0 +1,301 @@
+{
+  "framework": "INTENTIDE",
+  "script": "intentide_stress.py",
+  "author": "Agim Haxhijaha",
+  "orcid": "0009-0002-3234-7765",
+  "generated_at": "2026-07-16T17:56:25.220513+00:00",
+  "base_target": {
+    "agents": 500,
+    "capacity": 50
+  },
+  "note": "Full O(n\u00b2) coalition detection is sampled at stress scale; documented as a known scaling gap.",
+  "scalability_curve": [
+    {
+      "scale": {
+        "agents": 500,
+        "capacity": 50,
+        "oversubscription_ratio": 10.0,
+        "coalition_sample": 40
+      },
+      "timing_s": {
+        "build": 0.001222,
+        "stress_index": 0.000175,
+        "stability_protocol": 0.003558,
+        "allocation_settlement": 0.004093,
+        "coalition_sample": 0.006149,
+        "total": 0.015363,
+        "per_agent_stability_ms": 0.007116
+      },
+      "memory": {
+        "current_bytes": 336168,
+        "peak_bytes": 395133,
+        "peak_mb": 0.3768
+      },
+      "results": {
+        "initial_stress_bps": 9489,
+        "final_stress_bps": 9489,
+        "stress_state": "EMERGENCY_PAUSE",
+        "stability_rounds": 1,
+        "granted": 50,
+        "settlement_id": "settle-915cdc4ad0d0",
+        "unstable_coalitions_in_sample": 0,
+        "features": {
+          "arrival_acceleration": 2.0,
+          "demand_capacity_ratio": 10.0,
+          "semantic_concentration": 0.2,
+          "retry_amplification": 0.5,
+          "substitution_spillover": 0.15,
+          "provider_concentration": 0.2,
+          "timing_concentration": 0.5,
+          "integrity_anomaly": 0.0,
+          "recovery_confidence": 0.0
+        }
+      },
+      "multiplier": 1
+    },
+    {
+      "scale": {
+        "agents": 1000,
+        "capacity": 100,
+        "oversubscription_ratio": 10.0,
+        "coalition_sample": 40
+      },
+      "timing_s": {
+        "build": 0.002306,
+        "stress_index": 0.000317,
+        "stability_protocol": 0.008816,
+        "allocation_settlement": 0.007727,
+        "coalition_sample": 0.006314,
+        "total": 0.025925,
+        "per_agent_stability_ms": 0.008816
+      },
+      "memory": {
+        "current_bytes": 637596,
+        "peak_bytes": 755814,
+        "peak_mb": 0.7208
+      },
+      "results": {
+        "initial_stress_bps": 9489,
+        "final_stress_bps": 9489,
+        "stress_state": "EMERGENCY_PAUSE",
+        "stability_rounds": 1,
+        "granted": 100,
+        "settlement_id": "settle-8d9ca808d524",
+        "unstable_coalitions_in_sample": 0,
+        "features": {
+          "arrival_acceleration": 2.0,
+          "demand_capacity_ratio": 10.0,
+          "semantic_concentration": 0.2,
+          "retry_amplification": 0.5,
+          "substitution_spillover": 0.15,
+          "provider_concentration": 0.2,
+          "timing_concentration": 0.5,
+          "integrity_anomaly": 0.0,
+          "recovery_confidence": 0.0
+        }
+      },
+      "multiplier": 2
+    },
+    {
+      "scale": {
+        "agents": 2500,
+        "capacity": 250,
+        "oversubscription_ratio": 10.0,
+        "coalition_sample": 30
+      },
+      "timing_s": {
+        "build": 0.006206,
+        "stress_index": 0.000956,
+        "stability_protocol": 0.019098,
+        "allocation_settlement": 0.020181,
+        "coalition_sample": 0.004104,
+        "total": 0.051616,
+        "per_agent_stability_ms": 0.007639
+      },
+      "memory": {
+        "current_bytes": 1612136,
+        "peak_bytes": 1908634,
+        "peak_mb": 1.8202
+      },
+      "results": {
+        "initial_stress_bps": 9489,
+        "final_stress_bps": 9489,
+        "stress_state": "EMERGENCY_PAUSE",
+        "stability_rounds": 1,
+        "granted": 250,
+        "settlement_id": "settle-d80dc5081960",
+        "unstable_coalitions_in_sample": 0,
+        "features": {
+          "arrival_acceleration": 2.0,
+          "demand_capacity_ratio": 10.0,
+          "semantic_concentration": 0.2,
+          "retry_amplification": 0.5,
+          "substitution_spillover": 0.15,
+          "provider_concentration": 0.2,
+          "timing_concentration": 0.5,
+          "integrity_anomaly": 0.0,
+          "recovery_confidence": 0.0
+        }
+      },
+      "multiplier": 5
+    },
+    {
+      "scale": {
+        "agents": 5000,
+        "capacity": 500,
+        "oversubscription_ratio": 10.0,
+        "coalition_sample": 30
+      },
+      "timing_s": {
+        "build": 0.013018,
+        "stress_index": 0.001808,
+        "stability_protocol": 0.036495,
+        "allocation_settlement": 0.040233,
+        "coalition_sample": 0.004018,
+        "total": 0.097987,
+        "per_agent_stability_ms": 0.007299
+      },
+      "memory": {
+        "current_bytes": 3167884,
+        "peak_bytes": 3761350,
+        "peak_mb": 3.5871
+      },
+      "results": {
+        "initial_stress_bps": 9489,
+        "final_stress_bps": 9489,
+        "stress_state": "EMERGENCY_PAUSE",
+        "stability_rounds": 1,
+        "granted": 500,
+        "settlement_id": "settle-4c4abf261406",
+        "unstable_coalitions_in_sample": 0,
+        "features": {
+          "arrival_acceleration": 2.0,
+          "demand_capacity_ratio": 10.0,
+          "semantic_concentration": 0.2,
+          "retry_amplification": 0.5,
+          "substitution_spillover": 0.15,
+          "provider_concentration": 0.2,
+          "timing_concentration": 0.5,
+          "integrity_anomaly": 0.0,
+          "recovery_confidence": 0.0
+        }
+      },
+      "multiplier": 10
+    }
+  ],
+  "bottleneck_operation": "coalition_sample",
+  "bottleneck_rationale": "Dominant measured op at 1\u00d7 is 'coalition_sample'. Full coalition detection would dominate beyond sample size \u2014 see Honest Gap Register.",
+  "growth_by_operation": {
+    "build": [
+      {
+        "multiplier": 1,
+        "seconds": 0.001222,
+        "vs_1x": 1.0
+      },
+      {
+        "multiplier": 2,
+        "seconds": 0.002306,
+        "vs_1x": 1.887
+      },
+      {
+        "multiplier": 5,
+        "seconds": 0.006206,
+        "vs_1x": 5.079
+      },
+      {
+        "multiplier": 10,
+        "seconds": 0.013018,
+        "vs_1x": 10.653
+      }
+    ],
+    "stress_index": [
+      {
+        "multiplier": 1,
+        "seconds": 0.000175,
+        "vs_1x": 1.0
+      },
+      {
+        "multiplier": 2,
+        "seconds": 0.000317,
+        "vs_1x": 1.811
+      },
+      {
+        "multiplier": 5,
+        "seconds": 0.000956,
+        "vs_1x": 5.463
+      },
+      {
+        "multiplier": 10,
+        "seconds": 0.001808,
+        "vs_1x": 10.331
+      }
+    ],
+    "stability_protocol": [
+      {
+        "multiplier": 1,
+        "seconds": 0.003558,
+        "vs_1x": 1.0
+      },
+      {
+        "multiplier": 2,
+        "seconds": 0.008816,
+        "vs_1x": 2.478
+      },
+      {
+        "multiplier": 5,
+        "seconds": 0.019098,
+        "vs_1x": 5.368
+      },
+      {
+        "multiplier": 10,
+        "seconds": 0.036495,
+        "vs_1x": 10.257
+      }
+    ],
+    "allocation_settlement": [
+      {
+        "multiplier": 1,
+        "seconds": 0.004093,
+        "vs_1x": 1.0
+      },
+      {
+        "multiplier": 2,
+        "seconds": 0.007727,
+        "vs_1x": 1.888
+      },
+      {
+        "multiplier": 5,
+        "seconds": 0.020181,
+        "vs_1x": 4.931
+      },
+      {
+        "multiplier": 10,
+        "seconds": 0.040233,
+        "vs_1x": 9.83
+      }
+    ],
+    "coalition_sample": [
+      {
+        "multiplier": 1,
+        "seconds": 0.006149,
+        "vs_1x": 1.0
+      },
+      {
+        "multiplier": 2,
+        "seconds": 0.006314,
+        "vs_1x": 1.027
+      },
+      {
+        "multiplier": 5,
+        "seconds": 0.004104,
+        "vs_1x": 0.667
+      },
+      {
+        "multiplier": 10,
+        "seconds": 0.004018,
+        "vs_1x": 0.653
+      }
+    ]
+  },
+  "pass": true
+}

@@ -1,0 +1,330 @@
+{
+  "poc": "INTENTIDE",
+  "author": "Agim Haxhijaha",
+  "orcid": "0009-0002-3234-7765",
+  "timestamp": "2026-07-16T17:56:24.789550+00:00",
+  "disclaimer": "Proof-of-concept only. Not production. Not peer reviewed.",
+  "demonstrations": {
+    "stable_settlement": {
+      "name": "Stable Settlement (5 agents, 3 slots)",
+      "capacity": 3,
+      "stress_bps": 6695,
+      "stress_state": "RESERVE",
+      "settlement_id": "settle-36452ef340b9",
+      "stability_rounds": [
+        {
+          "round": 1,
+          "stress_bps": 6695,
+          "stress_state": "RESERVE",
+          "actions": [
+            "agent-alpha: confirmed",
+            "agent-beta: confirmed",
+            "agent-gamma: confirmed",
+            "agent-delta: confirmed",
+            "agent-epsilon: confirmed"
+          ]
+        }
+      ],
+      "unstable_coalitions": [
+        {
+          "coalition": [
+            "agent-alpha",
+            "agent-beta",
+            "agent-gamma",
+            "agent-delta",
+            "agent-epsilon"
+          ],
+          "removed_agent": "agent-alpha",
+          "baseline_outcome": "agent-beta:WAITLISTED",
+          "flipped_outcome": "agent-beta:GRANTED"
+        },
+        {
+          "coalition": [
+            "agent-alpha",
+            "agent-beta",
+            "agent-gamma",
+            "agent-delta",
+            "agent-epsilon"
+          ],
+          "removed_agent": "agent-gamma",
+          "baseline_outcome": "agent-beta:WAITLISTED",
+          "flipped_outcome": "agent-beta:GRANTED"
+        },
+        {
+          "coalition": [
+            "agent-alpha",
+            "agent-beta",
+            "agent-gamma",
+            "agent-delta",
+            "agent-epsilon"
+          ],
+          "removed_agent": "agent-epsilon",
+          "baseline_outcome": "agent-beta:WAITLISTED",
+          "flipped_outcome": "agent-beta:GRANTED"
+        }
+      ],
+      "agents": [
+        {
+          "agent_id": "agent-alpha",
+          "resource_class": "cold-storage",
+          "quantity": 1,
+          "arrival_order": 5,
+          "stability_weight": 1.0,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "agent-beta",
+          "resource_class": "cold-storage",
+          "quantity": 1,
+          "arrival_order": 1,
+          "stability_weight": 0.93,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "agent-gamma",
+          "resource_class": "cold-storage",
+          "quantity": 1,
+          "arrival_order": 3,
+          "stability_weight": 0.96,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "agent-delta",
+          "resource_class": "cold-storage",
+          "quantity": 1,
+          "arrival_order": 2,
+          "stability_weight": 0.92,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "agent-epsilon",
+          "resource_class": "cold-storage",
+          "quantity": 1,
+          "arrival_order": 4,
+          "stability_weight": 0.95,
+          "confirmed": true,
+          "revised": false
+        }
+      ],
+      "allocations": [
+        {
+          "agent_id": "agent-alpha",
+          "outcome": "GRANTED",
+          "slot": 1,
+          "stability_weight": 1.0,
+          "deterministic_rank": 1
+        },
+        {
+          "agent_id": "agent-gamma",
+          "outcome": "GRANTED",
+          "slot": 2,
+          "stability_weight": 0.96,
+          "deterministic_rank": 2
+        },
+        {
+          "agent_id": "agent-epsilon",
+          "outcome": "GRANTED",
+          "slot": 3,
+          "stability_weight": 0.95,
+          "deterministic_rank": 3
+        },
+        {
+          "agent_id": "agent-beta",
+          "outcome": "WAITLISTED",
+          "slot": null,
+          "stability_weight": 0.93,
+          "deterministic_rank": 4
+        },
+        {
+          "agent_id": "agent-delta",
+          "outcome": "WAITLISTED",
+          "slot": null,
+          "stability_weight": 0.92,
+          "deterministic_rank": 5
+        }
+      ]
+    },
+    "stress_resolution": {
+      "name": "Stress Resolution (6 agents, 3 slots, oversubscribed)",
+      "capacity": 3,
+      "stress_bps": 6997,
+      "stress_state": "RESERVE",
+      "settlement_id": "settle-8ebe81a25f3b",
+      "stability_rounds": [
+        {
+          "round": 1,
+          "stress_bps": 7826,
+          "stress_state": "RESERVE",
+          "actions": [
+            "stress-a: revised quantity -> 1",
+            "stress-b: revised quantity -> 1",
+            "stress-c: revised quantity -> 1",
+            "stress-d: confirmed",
+            "stress-e: confirmed",
+            "stress-f: confirmed"
+          ]
+        },
+        {
+          "round": 2,
+          "stress_bps": 6997,
+          "stress_state": "RESERVE",
+          "actions": [
+            "stress-a: confirmed",
+            "stress-b: confirmed",
+            "stress-c: confirmed"
+          ]
+        }
+      ],
+      "unstable_coalitions": [
+        {
+          "coalition": [
+            "stress-a",
+            "stress-b",
+            "stress-c",
+            "stress-d",
+            "stress-e",
+            "stress-f"
+          ],
+          "removed_agent": "stress-d",
+          "baseline_outcome": "stress-b:WAITLISTED",
+          "flipped_outcome": "stress-b:GRANTED"
+        },
+        {
+          "coalition": [
+            "stress-a",
+            "stress-b",
+            "stress-c",
+            "stress-d",
+            "stress-e",
+            "stress-f"
+          ],
+          "removed_agent": "stress-e",
+          "baseline_outcome": "stress-b:WAITLISTED",
+          "flipped_outcome": "stress-b:GRANTED"
+        },
+        {
+          "coalition": [
+            "stress-a",
+            "stress-b",
+            "stress-c",
+            "stress-d",
+            "stress-e",
+            "stress-f"
+          ],
+          "removed_agent": "stress-f",
+          "baseline_outcome": "stress-b:WAITLISTED",
+          "flipped_outcome": "stress-b:GRANTED"
+        }
+      ],
+      "agents": [
+        {
+          "agent_id": "stress-a",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 1,
+          "stability_weight": 0.694,
+          "confirmed": true,
+          "revised": true
+        },
+        {
+          "agent_id": "stress-b",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 2,
+          "stability_weight": 0.7124,
+          "confirmed": true,
+          "revised": true
+        },
+        {
+          "agent_id": "stress-c",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 3,
+          "stability_weight": 0.6756,
+          "confirmed": true,
+          "revised": true
+        },
+        {
+          "agent_id": "stress-d",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 4,
+          "stability_weight": 0.8,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "stress-e",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 5,
+          "stability_weight": 0.74,
+          "confirmed": true,
+          "revised": false
+        },
+        {
+          "agent_id": "stress-f",
+          "resource_class": "port-berth",
+          "quantity": 1,
+          "arrival_order": 6,
+          "stability_weight": 0.76,
+          "confirmed": true,
+          "revised": false
+        }
+      ],
+      "allocations": [
+        {
+          "agent_id": "stress-d",
+          "outcome": "GRANTED",
+          "slot": 1,
+          "stability_weight": 0.8,
+          "deterministic_rank": 1
+        },
+        {
+          "agent_id": "stress-f",
+          "outcome": "GRANTED",
+          "slot": 2,
+          "stability_weight": 0.76,
+          "deterministic_rank": 2
+        },
+        {
+          "agent_id": "stress-e",
+          "outcome": "GRANTED",
+          "slot": 3,
+          "stability_weight": 0.74,
+          "deterministic_rank": 3
+        },
+        {
+          "agent_id": "stress-b",
+          "outcome": "WAITLISTED",
+          "slot": null,
+          "stability_weight": 0.7124,
+          "deterministic_rank": 4
+        },
+        {
+          "agent_id": "stress-a",
+          "outcome": "WAITLISTED",
+          "slot": null,
+          "stability_weight": 0.694,
+          "deterministic_rank": 5
+        },
+        {
+          "agent_id": "stress-c",
+          "outcome": "WAITLISTED",
+          "slot": null,
+          "stability_weight": 0.6756,
+          "deterministic_rank": 6
+        }
+      ]
+    }
+  },
+  "success_criteria": {
+    "stable_settlement": true,
+    "stress_resolved": true,
+    "deterministic_outcomes": true
+  }
+}

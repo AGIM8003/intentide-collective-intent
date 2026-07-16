@@ -1,0 +1,55 @@
+{
+  "framework": "INTENTIDE",
+  "author": "Agim Haxhijaha",
+  "orcid": "0009-0002-3234-7765",
+  "disclaimer": "PoC replication evidence only \u2014 not production",
+  "timestamp_utc": "2026-07-16T17:56:24.243498+00:00",
+  "primary_style": "iterative_stability_ranking",
+  "alternative_style": "lp_style_greedy_feasibility",
+  "alt": {
+    "allocation": {
+      "agent-alpha": "GRANTED:1",
+      "agent-gamma": "GRANTED:2",
+      "agent-delta": "GRANTED:3",
+      "agent-epsilon": "WAITLISTED",
+      "agent-beta": "WAITLISTED"
+    },
+    "granted": [
+      "agent-alpha",
+      "agent-delta",
+      "agent-gamma"
+    ],
+    "waitlisted": [
+      "agent-beta",
+      "agent-epsilon"
+    ],
+    "capacity": 3,
+    "used": 3,
+    "stress_proxy_bps": 6666
+  },
+  "reference": {
+    "allocation": {
+      "agent-alpha": "GRANTED:1",
+      "agent-gamma": "GRANTED:2",
+      "agent-delta": "GRANTED:3",
+      "agent-epsilon": "WAITLISTED",
+      "agent-beta": "WAITLISTED"
+    },
+    "granted": [
+      "agent-alpha",
+      "agent-delta",
+      "agent-gamma"
+    ],
+    "waitlisted": [
+      "agent-beta",
+      "agent-epsilon"
+    ]
+  },
+  "fcfs_granted": [
+    "agent-beta",
+    "agent-gamma",
+    "agent-delta"
+  ],
+  "differs_from_fcfs": true,
+  "replication_pass": true
+}
