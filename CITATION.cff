@@ -1,19 +1,20 @@
 cff-version: 1.2.0
 message: "Please cite this independent research publication using the metadata below."
 title: "Intentide: A Pre-Settlement Collective Intent Stability Network for Autonomous Procurement of Scarce Capacity"
-type: software
+type: report
 authors:
   - family-names: "Haxhijaha"
     given-names: "Agim"
     orcid: "https://orcid.org/0009-0002-3234-7765"
     affiliation: "Independent Researcher"
     email: "agim@vertogroup.ai"
+doi: "10.5281/zenodo.21401347"
 version: "1.3.0"
 date-released: "2026-07-16"
+repository-code: "https://github.com/AGIM8003/intentide-collective-intent"
 license: "CC-BY-NC-ND-4.0"
-url: "https://github.com/AGIM8003/intentide"
 abstract: >-
-  Scarce capacity systems such as ports, spectrum, hospital beds, and compute still allocate by first-come-first-served or crude auctions that reward booking bursts and ignore stability under oversubscription. We propose INTENTIDE: a collective intent stability protocol with Synchronization Stress Index, revise-or-confirm rounds, and stability-weighted fair reservation with deterministic settlement digests. This Public Research Edition (v1.3.0) packages an importable research library (from intentide import INTENTIDEEngine), Reality Gate and benchmark PASS evidence, mutation testing, alternative implementation replication, an eighty-carrier fifteen-slot cold-storage port scenario with dropout, demand-spike, and partial-capacity edge cases, stress tests to 5,000 agents at ten-to-one oversubscription with sampled coalition checks, standards mapping to DMA fairness themes, IMO FAL, and ISO 22301, deployment manifests, competitive positioning against FCFS, auctions, and schedulers, and an honest gap register. INTENTIDE is not a live terminal operating system and does not claim mechanism-design completeness against strategic gaming. This independent technical blueprint does not claim peer review, independent human replication, patentability, or legal compliance opinion. It is released for evaluation, citation, and attempted falsification. Evidence artifacts in this package include Reality Gate results, benchmarks, mutation scores, real-world scenario JSON, stress-scale timings, deployment manifests, and an importable stdlib-only research library with quickstart and integration tests. Readers should treat all claims as blueprint-grade until independently replicated.
+  Scarce capacity systems such as ports, spectrum, hospital beds, and compute still allocate by first-come-first-served or crude auctions that reward booking bursts and ignore stability under oversubscription. We propose INTENTIDE: a collective intent stability protocol with Synchronization Stress Index, revise-or-confirm rounds, and stability-weighted fair reservation with deterministic settlement digests. This Public Research Edition (v1.3.0) packages an importable research library (from intentide import INTENTIDEEngine), Reality Gate and benchmark PASS evidence, mutation testing, alternative implementation replication, an eighty-carrier fifteen-slot cold-storage port scenario with dropout, demand-spike, and partial-capacity edge cases, stress tests to 5,000 agents at ten-to-one oversubscription with sampled coalition checks, standards mapping to DMA fairness themes, IMO FAL, and ISO 22301, deployment manifests, competitive positioning against FCFS, auctions, and schedulers, and an honest gap register. INTENTIDE is not a live terminal operating system and does not claim mechanism-design completeness against strategic gaming. This independent technical blueprint does not claim peer review, independent human replication, patentability, or legal compliance opinion. It is released for evaluation, citation, and attempted falsification.
 keywords:
   - "collective-intent"
   - "pre-settlement-risk"
